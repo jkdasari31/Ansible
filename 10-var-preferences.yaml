@@ -14,8 +14,8 @@
     private: false # user can't see what they are entering
   tasks:
   - name: check variables
-    vars:
-      PERSON: "Jk from TASK"
-      WISHES: "Morning from TASK"
+    # vars:
+    #   PERSON: "Jk from TASK"
+    #   WISHES: "Morning from TASK"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"

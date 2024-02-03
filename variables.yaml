@@ -2,5 +2,6 @@ Course: "DevOps with AWS"
 Trainer: "Sivakumar"
 Duration: "3.5 months"
 
-# PERSON: "Siva from FILE"
-# WISHES: "Morning from FILE"
+
+PERSON: "Siva from FILE"
+WISHES: "Morning from FILE"
