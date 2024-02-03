@@ -1,8 +1,8 @@
 - name: variables from PLAY level
   hosts: localhost
-  vars:
-    PERSON: "JK from PLAY"
-    WISHES: "Morning from PLAY"
+  # vars:
+  #   PERSON: "JK from PLAY"
+  #   WISHES: "Morning from PLAY"
   # vars_files:
   # - variables.yaml
   # vars_prompt:
