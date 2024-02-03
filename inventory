@@ -12,7 +12,7 @@ PERSON="Jk from inventory"
 WISHES="Morning from inventory"
 
 [node]
-3.95.24.95
+54.145.160.131
 
 [node:vars]
 Course="DevOps From inventory"
