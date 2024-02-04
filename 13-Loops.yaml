@@ -1,0 +1,41 @@
+- name: Loops-1
+  hosts: localhost
+  tasks:
+  - name: Print Devops tools
+    ansible.builtin.debug: 
+      msg: "Devops tools are: {{item}}" # item is adefault keyword
+    loop: # Tools are in list type
+    - Jenkins
+    - SonarQube
+    - Docker
+    - Artifactory
+    - Kubernetes
+    - Aws
+
+
+- name: Loops-2 Installing packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Install the tools
+    ansible.builtin.package:
+    - name: "{{item}}"
+      state: present
+      loop: # Tools are in map type
+        git
+        mysql
+        postfix
+
+
+- name: Looping with groups
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Installing the tools from loop groups
+    ansible.builtin.package:
+    - name: "{{item}}"
+      state: present
+      loop:
+      - {name: 'git', state: 'present'} #item in group
+      - {name: 'mysql', state: 'absent'}
+      - {name: 'postfix', state: 'absent'}
