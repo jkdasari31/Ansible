@@ -44,10 +44,6 @@ Read the configuration --> it is easy to read the configuration of server throug
 
 ### Pull vs Push configuration
 
-![alt text](images/pullvspush.jpg)
-
-![alt text](images/push.jpg)
-
 **PULL:**
 1. Nodes should connect to the servers through agent software.
 2. Nodes should download the configuration periodically, say every 30min.
@@ -59,7 +55,7 @@ Read the configuration --> it is easy to read the configuration of server throug
 3. Ansible uses SSH authentication to connect to the servers.
 
 
-Vars Preference level <br/>
+### Vars Preference level <br/>
 
 1. CMD Arguments <br/>
 2. task <br/>
